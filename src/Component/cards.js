@@ -1,6 +1,9 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
-function movieCard({coffeeProp}) {
+import {Link} from 'react-router-dom'
+
+function MovieCard({coffeeProp}) {
+
   return (
     <div >
        <Card style={{ width: '18rem' }}>
@@ -8,13 +11,17 @@ function movieCard({coffeeProp}) {
       <Card.Body>
         <Card.Title>{coffeeProp.name}</Card.Title>
         <Card.Text>
+          
          {coffeeProp.Description}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+          <Link to ={`/Details/${coffeeProp.id}`}>
+          <Button variant="primary">more details</Button>
+          </Link>
+
       </Card.Body>
     </Card>
     </div>
   )
 }
 
-export default movieCard
+export default MovieCard

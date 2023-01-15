@@ -1,6 +1,6 @@
 export const Coffee = [
     {
-        id :Math.random(),
+        id : Math.random() ,
         image : 'https://media-cdn.tripadvisor.com/media/photo-s/1a/6d/67/fd/a-tcups-tu-te-sens-chez.jpg',
         rate : 5 ,
         name : 'T-cups 1 ' ,
@@ -9,7 +9,7 @@ export const Coffee = [
     
     
         {
-            id : Math.random(),
+            id :  Math.random(),
             image : 'https://media-cdn.tripadvisor.com/media/photo-s/1a/6d/67/fd/a-tcups-tu-te-sens-chez.jpg',
             rate : 5 ,
             name : 'T-cups 2' , 
